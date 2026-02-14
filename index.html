@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fatimah Al Tawfiq Portfolio</title>
+        <!-- connecting the css and JS files to the httml -->
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js" defer></script>
+    </head>
+    
+
+    <body>
+        <!-- The header part on the top of the page containing a greeting message and my name -->
+        <div id="header1">
+            <h2 id="greeting">Hi!</h2>
+            <h1>I am Fatimah Al Tawfiq</h1>
+            <h2>Creative Web Developer blending technical logic with modern design</h2>
+        </div>
+        
+        <div> 
+            <!-- About me section on the web page,  -->
+            <h3>About me</h3>
+            <p id="para1">
+                I am a Software Engineering student at King Fahd University of Petroleum and Minerals (KFUPM)
+                 specializing in AI and Web Development. My goal is to build the next generation of digital
+                  solutions by combining intelligent algorithms with intuitive web design. I enjoy learning 
+                  new things and turning complex ideas into practical software that makes a real difference.
+            </p>
+        </div>
+        
+        <div >
+            <!-- my project section contains the project name, discription and an image for each project -->
+            <h3>My Projects</h3>
+
+            <div id="projects">
+                <!-- Each project has an id to access it in css and design it in the interface -->
+                <div id="p1">
+                    <!-- project name -->
+                    <h4>Letter Recognition</h4>
+                    <img src="Images\letter.jpg" alt="English alphsbetic letters">
+                    <!-- project description -->
+                    <p>
+                        Applying machine learning and Deep learning models (knn, SVM, DLL) on extracted features 
+                        from English letter images, reaching 97% accuracy.
+                    </p>
+                </div>
+
+                <div id="p2">
+                    <!-- project name -->
+                    <h4>Student Impact Hub website</h4>
+                    <img src="Images\SIHW.png" alt="Student Impact Hup web interface" width="350">
+
+                    <!-- project description -->
+                    <p>
+                        Designed and prototyped a university volunteering platform connecting students 
+                        with campus clubs to enhance participation in community activities.<br> Validated 
+                        requirements through an interactive Figma prototype prior to implementation.
+                    </p>
+                </div>
+
+                <div id="p3">
+                    <!-- project name -->
+                    <h4>Airline passengers satisfaction recognition</h4>
+                    <img src="Images\Airline.png" alt="" width="350">
+
+                    <!-- project description -->
+                    <p>Applying different machine learning models (DT, RF,GaussianNB) on the Airline passenger 
+                        database to classify their satisfaction, reaching 96% accuracy.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="Contact">
+            <!-- The last section on the web page wich is for contacting with me by using the form -->
+            <h3>Contact me</h3>
+            <form method="get">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email">
+                </p>
+                <p>
+                    <!-- create a lable and a textarea to inhance the usability when writing the 
+                     message, where uses can easily read the message content 
+                     -->
+                    <label for="message">message:</label><br><br>
+                    <textarea name="message" placeholder="Enter your message"></textarea>
+                </p>
+                <P>
+                    <input type="submit">
+                </P>
+            </form>
+        </div>
+        
+    </body>
+</html>

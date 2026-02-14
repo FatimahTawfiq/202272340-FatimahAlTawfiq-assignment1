@@ -1,0 +1,111 @@
+/* --- Global Styles --- */
+
+/* Setting page background and text defaults */
+body {
+    background-color: #f0f2f5;
+}
+
+p {
+    color: #57595B;
+}
+
+/* Primary and secondary headings styling */
+h3 {
+    color: #5A0E24;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+h4 {
+    color: #30364F;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+
+/* --- Layout & Components --- */
+
+/* Main Header: Gradient background with centered cursive text */
+#header1 {
+    padding: 2px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #5A0E24 0%, #57595B 100%);
+    text-align: center;
+    color: #F3E8DF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Projects Container: Uses flex-wrap for a grid-like flow */
+#projects {
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+/* Project Cards: Dynamic sizing with a 350px base for responsive wrapping */
+#p1, #p2, #p3 {
+    margin: 20px 30px; 
+    padding: 10px 30px 10px;
+    border: 1px solid #dadde1;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 350px; 
+}
+
+/* Media handling: Maintains aspect ratio and limits image scale */
+img {
+    max-width: 75%;
+    height: auto;
+}
+
+/* Left padding for content alignment in About me and Contact sections */
+#para1, #Contact p {
+    padding-left: 30px;
+}
+
+/* --- Interactive Elements --- */
+
+/* Input & Textarea: styling with soft shadows and transition effects */
+input, textarea {
+    color: #57595B;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.088);
+    transition: border .3s ease-in-out, box-shadow .3s ease;
+}
+
+textarea {
+    width: 20%;
+    height: 200px;
+    padding: 12px;
+    resize: both;
+}
+
+/* Focus State: Provides visual feedback to users by changing the input border color */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #57595B;
+}
+
+/* Submit Button: Matches header gradient with interactive state transitions */
+input[type="submit"] {
+    background: linear-gradient(90deg, #5A0E24 0%, #57595B 100%);
+    color: #F3E8DF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Submit Button Hover: Adds a tactile feel with a slight scale and lift */
+input[type="submit"]:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
